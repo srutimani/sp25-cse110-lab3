@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Timer Application - Meeting Minutes</title>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+  </head>
+  <body>
+    <header>
+      <h1>Meeting 1</h1>
+    </header>
+    <main>
+    <h1>Topic:</h1>
+      <p>This meeting will cover the quick <em>introduction</em> of the project, tentative schedules, and a brief task overview.</p>
+    <h2><i>April 9th, 2025</i></h2>
+    <hr>
+    <h3><b>Attendance List:</b></h3>
+      <ul>
+        <li>Sruti Mani</li>
+        <li>Siya Kamboj</li>
+        <li>Sumukhi Tunuguntla</li>
+        <li>Vira Prakhya</li>
+      </ul>
+    <h3><b>Agenda:</b></h3>
+    <ol>
+      <li>Go over the new project idea.</li>
+      <li>Establish objectives.</li>
+      <li>Go over tasks.</li>
+      <li>Discuss calender/deadlines.</li>
+    </ol>
+    <h3><b>Unfinished:</b></h3>
+    <p>We need to create a slack chat for this project</p>
+    <h3<b>>New:</b></h3>
+    <a href="https://docs.google.com/spreadsheets/d/1Ai_m9affuMuyMXD2G-g741BbglB-RIAMBRn_FbRFPUI/edit?gid=999692081#gid=999692081">Link to Task Calendar</a>
+    <h3><b>Comments/Questions/Concerns:</b></h3>
+      <ul>
+        <li>How will tasks be assigned?</li>
+        <li>What will be our main form of communication?</li>
+      </ul>
+    <h3><b>Visuals:</b></h3>
+    <img src="whiteboard.jpg" alt="Today's Zoom Whiteboard" width="500">
+    <h3><b>Meeting Video Recording:</b></h3>
+    <video width="500" controls>
+      <source src="meeting-video-recording.mp4" type="video/mp4">
+    </video>
+    <h3><b>Meeting Audio Recording:</b></h3>
+    <audio controls>
+      <source src="meeting-audio-recording.mp3" type="audio.mpeg">
+    </audio>
+    <details>
+      <summary>Meeting Summary</summary>
+      <p>In this meeting, we covered general information regarding the project, a tentative schedule with project <strong>checkpoints</strong> and <strong>timelines</strong>, a set of <strong>tasks</strong>, and what to expect for the next meetings.</p>
+    </details>
+    <h2>Meeting Feedback Form</h2>
+      <form>
+        <fieldset>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br><br>
+          <label for="today">Today's Date:</label><br>
+          <input type="date" id="today" name="name"><br><br>
+          <label for="">Rate the quality of the meeting:</label><br>
+          <select id="quality" name="quality">
+            <option value="great">Great</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+          </select><br><br>
+          <label>What is your preferred method of communication</label><br>
+          <input type="radio" id="whatsapp" name="whatsapp" value="whatsapp">
+          <label for="great">WhatsApp</label>
+          <input type="radio" id="imessage" name="imessage" value="imessage">
+          <label for="good">iMessage</label>
+          <input type="radio" id="discord" name="discord" value="discord">
+          <label for="average">Discord</label>
+          <input type="radio" id="slack" name="slack" value="slack">
+          <label for="poor">Slack</label><br><br>
+          <label for="tasks">What kinds of tasks do you want to work on?</label><br>
+          <input list="tasks" id="taskList" name="tasks">
+          <datalist id="tasks">
+            <option value="Software Development">
+            <option value="QA Testing">
+            <option value="Project Management">
+          </datalist><br><br>
+          <label for="questions">Any Questions?</label><br>
+          <textarea id="questions" name="questions" rows="5" cols="50"></textarea><br><br>
+          <label>Do you like this project?</label>
+            <input type="checkbox" name="subscribe" value="yes"> Yes
+            <input type="checkbox" name="subscribe" value="no"> No
+          </label><br><br>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <hr>
+      <div>Project Manager: Sruti Mani</div>
+      <span>CSE 110 Project</span>
+    </footer>
+  </body>
+</html>
