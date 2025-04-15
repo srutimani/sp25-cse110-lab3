@@ -59,7 +59,7 @@
           <input type="text" id="name" name="name"><br><br>
           <label for="today">Today's Date:</label><br>
           <input type="date" id="today" name="name"><br><br>
-          <label for="">Rate the quality of the meeting:</label><br>
+          <label for="quality">Rate the quality of the meeting:</label>
           <select id="quality" name="quality">
             <option value="great">Great</option>
             <option value="good">Good</option>
@@ -75,7 +75,7 @@
           <label for="discord">Discord</label>
           <input type="radio" id="slack" name="slack" value="slack">
           <label for="slack">Slack</label><br><br>
-          <label for="tasks">What kinds of tasks do you want to work on?</label><br>
+          <label for="taskList">What kinds of tasks do you want to work on?</label><br>
           <input list="tasks" id="taskList" name="tasks">
           <datalist id="tasks">
             <option value="Software Development">
@@ -84,10 +84,11 @@
           </datalist><br><br>
           <label for="questions">Any Questions?</label><br>
           <textarea id="questions" name="questions" rows="5" cols="50"></textarea><br><br>
-          <label>Do you like this project?</label>
-            <input type="checkbox" name="subscribe" value="yes"> Yes
-            <input type="checkbox" name="subscribe" value="no"> No
-          </label><br><br>
+          <p>Do you like this project?</p>
+            <input type="checkbox" id="yes" name="subscribe" value="yes">
+            <label for="yes">Yes</label>
+            <input type="checkbox" id="no" name="subscribe" value="no">
+            <label for="no">No</label>
           <button type="submit">Submit</button>
         </fieldset>
       </form>
