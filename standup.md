@@ -15,9 +15,7 @@ This meeting will go over everyone's progress on the project from yesterday and 
 | Team Member | Completed                           | Goals                           | Questions/Concerns|
 |-------------|-------------------------------------|---------------------------------|-------------------|
 | Lana        | Completed architecture design       | Going to review design with team| None              |
-|-------------|-------------------------------------|---------------------------------|-------------------|
 | Ava         | Completed second round of code      | Going to test code with QA team | Had a major bug   |
-|-------------|-------------------------------------|---------------------------------|-------------------|
 | Jenna       | Completed first round of testing    | Going to test second round      | None              |
 
 ## Overall Task Plan
