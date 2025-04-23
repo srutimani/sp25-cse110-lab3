@@ -2,230 +2,226 @@
 
 /* Universal Selector */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
 
 /* Color Variables & Fallback */
 :root {
-    --main-bg-color: hsl(210, 60%, 98%);
-    --highlight-color: #ff00aa;
-    --fallback-color: rgb(197, 115, 252);
-  }
-  
-  /* Fonts */
-  * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /* Background, Color */
-  body {
-    background-color: var(--main-bg-color, var(--fallback-color));
-    margin: 20px;
-    color: rgb(34, 34, 34);
-  }
-  
-  /* Text, Color */
-  header {
-    background-color: rgba(255, 102, 0, 0.1);
-    text-align: center;
-    text-decoration: underline;
-    padding: 1rem;
-    border: 2px solid hsl(210, 20%, 70%);
-    border-radius: 15px;
-  }
-  
-  /* Color Mix Example, Element Selector*/
-  h1 {
-    color: color-mix(in srgb, pink 70%, grey 30%);
-  }
-  
-  /* Background Example */
-  main {
-    background-color: #fff;
-    padding: 2rem;
-    margin: auto;
-    max-width: 800px;
-  }
-  
-  /* Units (More examples of Absolute and Relative in other sections) */
-  h2 {
-    font-size: 2rem; 
-    margin-bottom: 1.5em; 
-  }
-  
-  h3 {
-    font-size: 1.2rem;
-    margin: 0.75em 0;
-  }
-  
-  /* Box Model (Margin (Long and Short), Padding (Long and Short), Borders) */
-  p {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin: 10px 15px 5px 5px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 10px;
-    padding: 5px 10px 5px 10px;
-    border-style: solid;
-    border-color: #ccc;
-    border-width: 2vw;
-    border-radius: 8px;
+  --main-bg-color: hsl(210, 60%, 98%);
+  --highlight-color: #ff00aa;
+  --fallback-color: rgb(197, 115, 252);
+}
 
+/* Background, Color */
+body {
+  background-color: var(--main-bg-color, var(--fallback-color));
+  margin: 20px;
+  color: rgb(34, 34, 34);
+}
+
+/* Text, Color */
+header {
+  background-color: rgba(255, 102, 0, 0.1);
+  text-align: center;
+  text-decoration: underline;
+  padding: 1rem;
+  border: 2px solid hsl(210, 20%, 70%);
+  border-radius: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Color Mix Example */
+h1 {
+  color: color-mix(in srgb, pink 70%, grey 30%);
+}
+
+/* Background Example */
+main {
+  background-color: #fff;
+  padding: 2rem;
+  margin: auto;
+  max-width: 800px;
+  margin-top: 120px;
+}
+
+/* Units */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 0.75em 0;
+}
+
+/* Box Model */
+p {
+  margin: 10px 15px 5px 5px;
+  padding: 5px 10px;
+  border: 2vw solid #ccc;
+  border-radius: 8px;
+}
+
+/* Display */
+details {
+  display: block;
+}
+
+summary {
+  cursor: pointer;
+}
+
+/* Triangle indicator for summary */
+summary::before {
+  content: "▶ ";
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+details[open] summary::before {
+  content: "▼ ";
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* Sizing */
+video {
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+audio {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Position */
+footer {
+  position: static;
+}
+
+/* Pseudo-classes */
+a:hover {
+  color: blueviolet;
+}
+
+a:active {
+  color: #e5d3c1;
+}
+
+/* Flexbox */
+ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+ul li {
+  flex: 1 1 30%;
+  padding: 0.5rem;
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Grid */
+ol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style-position: inside;
+}
+
+ol li {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 600px) {
+  main {
+    padding: 1rem;
   }
-  
-  /* Display */
-  details, summary {
-    display: block;
-    content: "▶ "
+
+  h1 {
+    font-size: 1.5rem;
   }
-  
-  img {
-    display: inline-block;
-    max-width: 100%;
-  }
-  
-  /* Sizing */
-  video {
-    height: 100%;
-    width: 100%;
-    max-width: 500px;
-    min-width: 300px;
-  }
-  
-  audio {
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  /* Position */
-  header {
-    position: fixed;
-  }
-  footer {
-    position: static;
-  }
-  
-  /* Pseudo-class Selector */
-  a:hover {
-    color: blueviolet;
-  }
-  
-  a:active {
-    color: #e5d3c1;
-  }
-  
-  /* Flexbox */
-  ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
-  }
-  
-  ul li {
-    flex: 1 1 30%;
-    padding: 0.5rem;
-    background-color: hsl(0, 0%, 95%);
-    border: 1px solid #ddd;
-    text-align: center;
-  }
-  
-  /* Grid */
+
   ol {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    list-style-position: inside;
+    grid-template-columns: 1fr;
   }
-  
-  ol li {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  
-  /* Responsiveness */
-  @media screen and (max-width: 600px) {
-    main {
-      padding: 1rem;
-    }
-  
-    h1 {
-      font-size: 1.5rem;
-    }
-  
-    ol {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  /* Class Selector */
-  .special-text {
-    color: #0077cc;
-  }
-  
-  /* ID Selector */
-  #name {
-    border: 2px solid #0077cc;
-  }
-  
-  /* Attribute Selector */
-  input[type="radio"] {
-    margin-right: 10px;
-  }
-  
-  /* Selector List */
-  h2, h3 {
-    text-decoration: underline;
-  }
-  
-  /* Descendant Combinator */
-  form label {
-    font-weight: bold;
-  }
-  
-  /* Child Combinator */
-  form > fieldset {
-    border: 2mm dashed #ccc;
-    padding: 1em;
-    margin-bottom: 2cm;
-  }
-  
-  /* General Sibling Combinator */
-  h2 ~ p {
-    font-style: italic;
-  }
-  
-  /* Adjacent Sibling Combinator */
-  h3 + p {
-    background-color: rgba(255, 255, 0, 0.1);
-  }
-  
-  /* Combining Two Selectors */
-  p.special-text {
-    background-color: #f0f0f0;
-  }
-  
-  /* New Selector :has() */
-  form:has(input[type="checkbox"]:checked) {
-    accent-color: hsl(120, 87%, 75%);;
-  }
-  
-  /* Nested Selector */
-  form {
-    label {
-      color: #333;
-    }
-  
-    textarea {
-      border-radius: 10px;
-    }
-  }
+}
+
+/* Class Selector */
+.special-text {
+  color: #0077cc;
+}
+
+/* ID Selector */
+#name {
+  border: 2px solid #0077cc;
+}
+
+/* Attribute Selector */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Selector List */
+h2, h3 {
+  text-decoration: underline;
+}
+
+/* Descendant Combinator */
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Child Combinator */
+form > fieldset {
+  border: 2mm dashed #ccc;
+  padding: 1em;
+  margin-bottom: 2cm;
+}
+
+/* General Sibling Combinator */
+h2 ~ p {
+  font-style: italic;
+}
+
+/* Adjacent Sibling Combinator */
+h3 + p {
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+/* Combining Two Selectors */
+p.special-text {
+  background-color: #f0f0f0;
+}
+
+/* New Selector :has() */
+form:has(input[type="checkbox"]:checked) {
+  accent-color: hsl(120, 87%, 75%);
+}
+
+/* Individual form elements */
+form textarea {
+  border-radius: 10px;
+}
+
   
