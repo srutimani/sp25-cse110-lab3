@@ -39,6 +39,9 @@ header {
 /* Color Mix Example */
 h1 {
   color: color-mix(in srgb, pink 70%, grey 30%);
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
 }
 
 /* Background Example */
