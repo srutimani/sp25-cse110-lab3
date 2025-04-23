@@ -123,6 +123,7 @@
   /* Flexbox */
   ul {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: space-around;
@@ -139,8 +140,8 @@
   /* Grid */
   ol {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 1rem;
   }
   
