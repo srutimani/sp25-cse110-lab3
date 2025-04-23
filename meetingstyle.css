@@ -83,6 +83,7 @@
   /* Display */
   details, summary {
     display: block;
+    content: "▶ "
   }
   
   img {
@@ -126,7 +127,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 0.5rem;
-    justify-content: space-around;
+    justify-content: center;
   }
   
   ul li {
@@ -140,9 +141,9 @@
   /* Grid */
   ol {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    list-style-position: inside;
   }
   
   ol li {
@@ -194,7 +195,7 @@
   form > fieldset {
     border: 2mm dashed #ccc;
     padding: 1em;
-    margin-bottom: 20cm;
+    margin-bottom: 2cm;
   }
   
   /* General Sibling Combinator */
