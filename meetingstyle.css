@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Universal Selector */
 * {
     margin: 0;
@@ -17,8 +19,6 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
   }
-
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   
   /* Background, Color */
   body {
@@ -67,7 +67,7 @@
     margin-bottom: 15px;
     margin-left: 5px;
     margin-right: 5px;
-    margin: 10px, 15px, 5px, 5px;
+    margin: 10px 15px 5px 5px;
     padding-top: 5px;
     padding-bottom: 10px;
     padding-left: 5px;
@@ -117,7 +117,7 @@
   }
   
   a:active {
-    color: color(display-p3 1 0.5 0 / 0.9);
+    color: #ff8000;
   }
   
   /* Flexbox */
@@ -213,16 +213,16 @@
   
   /* New Selector :has() */
   form:has(input[type="checkbox"]:checked) {
-    border: 3px solid hsl(120, 87%, 75%);
+    accent-color: hsl(120, 87%, 75%);;
   }
   
   /* Nested Selector */
   form {
-    & label {
+    label {
       color: #333;
     }
   
-    & textarea {
+    textarea {
       border-radius: 10px;
     }
   }
