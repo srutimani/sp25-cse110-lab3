@@ -78,17 +78,6 @@ summary {
   cursor: pointer;
 }
 
-/* Triangle indicator for summary */
-summary::before {
-  content: "▶ ";
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-details[open] summary::before {
-  content: "▼ ";
-}
-
 img {
   display: inline-block;
   max-width: 100%;
@@ -189,7 +178,6 @@ h2, h3 {
 /* Descendant Combinator */
 form label {
   font-weight: bold;
-  color: #333;
 }
 
 /* Child Combinator */
@@ -219,9 +207,13 @@ form:has(input[type="checkbox"]:checked) {
   accent-color: hsl(120, 87%, 75%);
 }
 
-/* Individual form elements */
-form textarea {
-  border-radius: 10px;
-}
+ /* Nested Selector */
+ form {
+  label {
+    color: #333;
+  }
 
-  
+  textarea {
+    border-radius: 10px;
+  }
+}
