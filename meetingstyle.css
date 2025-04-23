@@ -39,7 +39,7 @@
   
   /* Color Mix Example, Element Selector*/
   h1 {
-    color: color-mix(in srgb, orange 60%, red 40%);
+    color: color-mix(in srgb, orange 70%, red 30%);
   }
   
   /* Background Example */
@@ -184,61 +184,46 @@
     text-decoration: underline;
   }
   
-  /* Form Styling */
+  /* Descendant Combinator */
   form label {
-    color: #333;
     font-weight: bold;
   }
-
-  form textarea {
-    border-radius: 10px;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-  }
-
-  /* Fieldset Styling */
+  
+  /* Child Combinator */
   form > fieldset {
     border: 2mm dashed #ccc;
-    padding: 1.5em;
-    margin-bottom: 2em;
+    padding: 1em;
+    margin-bottom: 20cm;
   }
-
-  input[type="checkbox"] {
-  accent-color: hsl(120, 87%, 75%);
+  
+  /* General Sibling Combinator */
+  h2 ~ p {
+    font-style: italic;
   }
-
-  /* Input and select styling for consistency */
-  form input[type="text"],
-  form input[type="date"],
-  form select,
-  form textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
+  
+  /* Adjacent Sibling Combinator */
+  h3 + p {
+    background-color: rgba(255, 255, 0, 0.1);
   }
-
-  /* Radio buttons spacing */
-  form input[type="radio"] {
-    margin-right: 0.5em;
+  
+  /* Combining Two Selectors */
+  p.special-text {
+    background-color: #f0f0f0;
   }
-
-  /* Buttons */
-  form button {
-    background-color: var(--highlight-color);
-    color: white;
-    padding: 0.75em 1.5em;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
+  
+  /* New Selector :has() */
+  form:has(input[type="checkbox"]:checked) {
+    accent-color: hsl(120, 87%, 75%);;
   }
-
-  form button:hover {
-    background-color: #e65c00;
+  
+  /* Nested Selector */
+  form {
+    label {
+      color: #333;
+    }
+  
+    textarea {
+      border-radius: 10px;
+    }
   }
-
   
