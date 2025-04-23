@@ -10,8 +10,8 @@
 /* Color Variables & Fallback */
 :root {
     --main-bg-color: hsl(210, 60%, 98%);
-    --highlight-color: #ff6600;
-    --fallback-color: orange;
+    --highlight-color: #ff00aa;
+    --fallback-color: rgb(197, 115, 252);
   }
   
   /* Fonts */
@@ -39,7 +39,7 @@
   
   /* Color Mix Example, Element Selector*/
   h1 {
-    color: color-mix(in srgb, orange 70%, red 30%);
+    color: color-mix(in srgb, pink 70%, grey 30%);
   }
   
   /* Background Example */
@@ -113,11 +113,11 @@
   
   /* Pseudo-class Selector */
   a:hover {
-    color: orange;
+    color: blueviolet;
   }
   
   a:active {
-    color: #ff8000;
+    color: #e5d3c1;
   }
   
   /* Flexbox */
