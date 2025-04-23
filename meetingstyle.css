@@ -192,8 +192,8 @@
   /* Child Combinator */
   form > fieldset {
     border: 2mm dashed #ccc;
-    padding: 10cm;
-    margin-bottom: 20px;
+    padding: 1em;
+    margin-bottom: 20cm;
   }
   
   /* General Sibling Combinator */
